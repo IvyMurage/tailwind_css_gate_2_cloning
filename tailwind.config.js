@@ -34,6 +34,8 @@ module.exports = {
       },
       fontSize: {
         3.2: "32px",
+        2.5: "25.7px",
+        1.9: "19.2px",
       },
       backgroundSize: {
         50: "50%",
@@ -43,6 +45,13 @@ module.exports = {
       },
       borderColor: {
         "light-gray": "#5c5c5c",
+      },
+      width: {
+        30: "120px",
+      },
+      padding: {
+        2.5: "10px",
+        0.5: "2px",
       },
     },
   },
