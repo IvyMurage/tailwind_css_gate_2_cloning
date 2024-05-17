@@ -27,6 +27,12 @@ module.exports = {
       maxWidth: {
         480: "480px",
       },
+      margin: {
+        10.4: "0.65em",
+      },
+      fontSize: {
+        3.2: "32px",
+      },
     },
   },
   plugins: [],
