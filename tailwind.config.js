@@ -23,6 +23,8 @@ module.exports = {
         "hero-pattern":
           "url('/images/estudantes-icbas-lab-2024.format-jpeg.jpg')",
         "hero-pattern-2": "url('/images/minerva_01.png')",
+        "hero-pattern-3":
+          "url('https://www.up.pt/portal/static/images/img_minerva_footer.png')",
       },
       maxWidth: {
         480: "480px",
@@ -32,6 +34,15 @@ module.exports = {
       },
       fontSize: {
         3.2: "32px",
+      },
+      backgroundSize: {
+        50: "50%",
+      },
+      backgroundPosition: {
+        custom: "-390px -65px",
+      },
+      borderColor: {
+        "light-gray": "#5c5c5c",
       },
     },
   },
