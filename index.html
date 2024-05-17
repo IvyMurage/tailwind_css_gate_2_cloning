@@ -11,16 +11,85 @@
     <title>Document</title>
 </head>
 
-<body>
-    <header>
-        <h1 class="text-red-300 font-bold">Hello welcome to my website</h1>
+<body class="font-lato min-h-dvh flex flex-col">
+
+    <header class="border-2">
+        <!-- section one -->
+        <div class="bg-dark-gray items-center flex justify-between px-28">
+            <div class="flex items-center text-sm font-semibold">
+                <div class="flex items-center">
+                    <a href="#" class="text-white">
+                        About the University</a>
+                    <img src="/images/SolidChevronDownLittleGray.svg" alt="arrow-down" class="w-10 h-10" />
+                </div>
+                <div class="flex items-center">
+                    <a href="#" class="text-white">
+                        Faculties</a>
+                    <img src="/images/SolidChevronDownLittleGray.svg" alt="arrow-down" class="w-10 h-10" />
+                </div>
+            </div>
+
+            <div class="flex gap-8">
+                <div class="flex gap-2">
+                    <a href="#" class="text-white">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+
+                <ul class="flex gap-2">
+                    <li class="text-gray-500 hover:text-white">PT</li>
+                    <li class="text-white ">EN</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- section tow -->
+        <div class="flex justify-around h-24 bg-gray-100 items-center px-28">
+            <div class="flex">
+                <img src="/images/logo.png" alt="logo" />
+            </div>
+            <div class="flex items-center">
+                <ul class="flex gap-4 mr-[2.5rem] text-dark-gray uppercase text-[16px] font-bold">
+                    <li>Study</li>
+                    <li>Research</li>
+                    <li>Innovate</li>
+                    <li>Live</li>
+                    <li>Explore</li>
+                </ul>
+                <form class="border">
+                    <span class="relative">
+                        <input type="text" class="border-b-1 bg-transparent border-dark-gray " placeholder="Search">
+
+                        <i class="fa-solid absolute right-3 fa-magnifying-glass"></i>
+                    </span>
+                </form>
+            </div>
+        </div>
     </header>
     <main>
-        Body
+
     </main>
     <footer>
         <p>&copy; 2021</p>
     </footer>
+
+
 
 </body>
 

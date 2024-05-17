@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary-100": "#F0F4FF",
-        "primary-200": "#D9E2FF",
-        "primary-300": "#A6C1FF",
-        "secondary-100": "#F0F4FF",
-        "secondary-200": "#D9E2FF",
+        "gray-100": "#D5D5D5",
+        "gray-200": "#999999",
+        "dark-gray": "#333333",
+        "light-brown": "#A18A4D",
+        "text-color": "#6A6A64",
       },
       borderWidth: {
         3: "3px",
