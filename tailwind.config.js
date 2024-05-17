@@ -36,6 +36,9 @@ module.exports = {
         3.2: "32px",
         2.5: "25.7px",
         1.9: "19.2px",
+        3.8: "38px",
+        2.6: "26px",
+        2.8: "28px",
       },
       backgroundSize: {
         50: "50%",
@@ -49,9 +52,17 @@ module.exports = {
       width: {
         30: "120px",
       },
+      height: {
+        0.5: "0.5px",
+        350: "350px",
+        600: "600px",
+      },
       padding: {
         2.5: "10px",
         0.5: "2px",
+      },
+      inset: {
+        neg: "-325px",
       },
     },
   },
