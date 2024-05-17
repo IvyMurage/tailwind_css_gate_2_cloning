@@ -9,17 +9,22 @@ module.exports = {
         "dark-gray": "#333333",
         "light-brown": "#A18A4D",
         "text-color": "#6A6A64",
+        "light-gray": "#313132",
       },
       borderWidth: {
         3: "3px",
         1: "1px",
       },
-    },
-    fontFamily: {
-      lato: ["Lato", "sans-serif"],
-    },
-    backgroundImage: {
-      "hero-pattern": "url('/images/hero-pattern.svg')",
+      fontFamily: {
+        lato: ["Lato", "sans-serif"],
+      },
+      backgroundImage: {
+        "hero-pattern":
+          "url('/images/estudantes-icbas-lab-2024.format-jpeg.jpg')",
+      },
+      maxWidth: {
+        480: "480px",
+      },
     },
   },
   plugins: [],

@@ -11,9 +11,9 @@
     <title>Document</title>
 </head>
 
-<body class="font-lato min-h-dvh flex flex-col">
+<body class="font-lato ">
 
-    <header class="border-2">
+    <header class="">
         <!-- section one -->
         <div class="bg-dark-gray items-center flex justify-between px-28">
             <div class="flex items-center text-sm font-semibold">
@@ -82,8 +82,91 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class=" h-full">
+        <div class="bg-hero-pattern h-[600px] bg-cover bg-no-repeat bg-center">
+            <div class="flex items-center justify-between h-full">
+                <button class="p-2  flex-shrink-0 bg-light-brown">
+                    <img src="/images/ChevronLeftLittle.svg" alt="arrow-down" class="w-10 h-10" />
+                </button>
 
+
+                <div class="p-5 max-w-480 bg-light-gray bg-opacity-90 text-white">
+                    <h2 class="mb-4 font-bold text-2xl">We're in the world's top 200 in 13 areas of study!</h2>
+                    <p class=" mb-8 text-wrap">U.Porto stands out in 28 areas of study in the "QS World University
+                        Rankings by
+                        Subject" 2024,
+                        being the best in Portugal in 16 of them.</p>
+                    <a href="#" class=" bg-light-brown px-4 py-2 text-white">See more</a>
+                </div>
+                <button class="p-2 bg-light-brown">
+                    <img src="/images/ChevronRightLittle.svg" alt="arrow-down" class="w-10 h-10" />
+                </button>
+            </div>
+        </div>
+
+        <!-- second section -->
+        <section class="py-24 px-28">
+            <div>
+                <div class="mb-8">
+                    <h2 class="text-5xl text-light-brown font-light">Study</h2>
+                </div>
+
+                <div class="grid grid-cols-12 mb-[4em]">
+                    <div class="col-span-4 ">
+                        <h3 class="text-dark-gray  text-[28px] font-bold">Your future is here!</h3>
+                    </div>
+                    <div class="col-span-8">
+                        <p class="text-[18px]  font-light">
+                            Gathering the most complete offer of training programmes in Portugal, the 14 faculties of
+                            the U.Porto offer unique conditions to those who want to build an academic path of
+                            excellence and properly valued by the labour market.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 gap-3">
+                <div class="col-span-12 px-4 font-semibold text-3xl mb-[.8em]">
+                    <h3>Which course are you looking for?</h3>
+                </div>
+
+                <div class="col-span-8">
+                    <form class="px-4 flex flex-col gap-4">
+                        <div>
+                            <select name="course" id="course"
+                                class="w-full border-2 bg-transparent border-dark-gray px-4 py-3">
+                                <option value="1">All</option>
+                                <option value="2">Bachelor's and Integrated Master’s Degrees</option>
+                                <option value="3">Master’s Degrees</option>
+                                <option value="4">Doctorates</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="text" class="w-full border-2 bg-transparent border-dark-gray text-lg px-4 py-3"
+                                placeholder="Please enter course keywords...">
+                        </div>
+                        <div class="">
+                            <button
+                                class="bg-light-brown hover:border-2 hover:border-light-brown hover:bg-transparent hover:text-light-brown text-2xl font-bold w-full text-white px-4 py-3">Search</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-span-4">
+                    <div>
+                        <h4 class="text-2xl mb-2">Courses from A to Z:</h4>
+                        <p>
+                            <a class="text-2xl underline font-light" href="#">Bachelor's and Integrated Master’s
+                                Degrees</a>
+                        </p>
+                        <p>
+                            <a class="text-2xl underline font-light" href="#">Master’s Degrees</a>
+                        </p>
+                        <p>
+                            <a class="text-2xl underline font-light" href="#">Doctorates</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2021</p>
