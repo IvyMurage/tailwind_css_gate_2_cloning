@@ -15,7 +15,7 @@
 
     <header class="">
         <!-- section one -->
-        <div class="bg-dark-gray items-center flex justify-between px-28">
+        <div class="bg-dark-gray hidden items-center sm:flex justify-between px-28">
             <div class="flex items-center text-sm font-semibold">
                 <div class="flex items-center">
                     <a href="#" class="text-white">
@@ -60,19 +60,37 @@
         </div>
 
         <!-- section tow -->
-        <div class="flex justify-around h-24 bg-gray-100 items-center px-28">
-            <div class="flex">
+        <div class="flex justify-between gap-5  h-24 bg-gray-100 items-center px-4 sm:px-28">
+            <span class="sm:hidden"><i class="fa-solid fa-bars"></i></span>
+
+            <div class="flex ">
                 <img src="/images/logo.png" alt="logo" />
+
             </div>
-            <div class="flex items-center">
-                <ul class="flex gap-4 mr-[2.5rem] text-dark-gray uppercase text-[16px] font-bold">
+            <span class="sm:hidden">
+                <svg height="1.4em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                    xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: none;
+                        }
+                    </style>
+                    <rect x="192" y="240" width="128" height="32"></rect>
+                    <rect x="192" y="80" width="128" height="32"></rect>
+                    <rect x="192" y="400" width="128" height="32"></rect>
+                    <rect class="st0" width="512" height="512"></rect>
+                </svg>
+            </span>
+            <div class=" hidden sm:flex sm:flex-grow  sm:items-center">
+                <ul class="flex gap-8 mr-[2.5rem] text-dark-gray uppercase text-base font-bold">
                     <li>Study</li>
                     <li>Research</li>
                     <li>Innovate</li>
                     <li>Live</li>
                     <li>Explore</li>
                 </ul>
-                <form class="border">
+                <form>
                     <span class="relative">
                         <input type="text" class="border-b-1 bg-transparent border-dark-gray " placeholder="Search">
 
@@ -83,35 +101,43 @@
         </div>
     </header>
     <main class=" h-full">
-        <div class="bg-hero-pattern h-[600px] bg-cover bg-no-repeat bg-center">
-            <div class="flex items-center justify-between h-full">
-                <button class="p-2  flex-shrink-0 bg-light-brown">
-                    <img src="/images/ChevronLeftLittle.svg" alt="arrow-down" class="w-10 h-10" />
-                </button>
-
-
-                <div class="p-5 max-w-480 bg-light-gray bg-opacity-90 text-white">
-                    <h2 class="mb-4 font-bold text-2xl">We're in the world's top 200 in 13 areas of study!</h2>
-                    <p class=" mb-8 text-wrap">U.Porto stands out in 28 areas of study in the "QS World University
-                        Rankings by
-                        Subject" 2024,
-                        being the best in Portugal in 16 of them.</p>
-                    <a href="#" class=" bg-light-brown px-4 py-2 text-white">See more</a>
+        <div class="bg-hero-pattern h-[350px] sm:h-[600px] bg-cover bg-no-repeat bg-center">
+            <div class="sm:grid flex items-end h-full grid-cols-12  sm:place-items-center">
+                <div class="col-span-1 hidden sm:block w-full  ">
+                    <button class="p-2  flex-shrink-0 bg-light-brown">
+                        <img src="/images/ChevronLeftLittle.svg" alt="arrow-down" class="w-10 h-10" />
+                    </button>
                 </div>
-                <button class="p-2 bg-light-brown">
-                    <img src="/images/ChevronRightLittle.svg" alt="arrow-down" class="w-10 h-10" />
-                </button>
+
+                <div class="sm:col-span-10  col-span-12 w-full">
+                    <div class="p-5 max-w-480 h-full bg-light-gray bg-opacity-90 text-white">
+                        <h2 class=" mb-4 font-bold text-2xl">We're in the world's top 200 in 13 areas of study!</h2>
+                        <p class="hidden sm:block sm:mb-8 text-wrap">U.Porto stands out in 28 areas of study in the "QS
+                            World University
+                            Rankings by
+                            Subject" 2024,
+                            being the best in Portugal in 16 of them.</p>
+                        <a href="#" class=" bg-light-brown px-4 py-2 text-white">See more</a>
+                    </div>
+                </div>
+
+
+                <div class="col-span-1 hidden sm:block row-start-1 sm:row-auto w-full ">
+                    <button class="p-2  flex-shrink-0 bg-light-brown">
+                        <img src="/images/ChevronLeftLittle.svg" alt="arrow-down" class="w-10 h-10" />
+                    </button>
+                </div>
             </div>
         </div>
 
         <!-- second section -->
-        <section class="py-24 px-28">
-            <div>
+        <section class="py-24 px-5 sm:px-28">
+            <div class="mb-16  pb-10">
                 <div class="mb-8">
                     <h2 class="text-5xl text-light-brown font-light">Study</h2>
                 </div>
 
-                <div class="grid grid-cols-12 mb-[4em]">
+                <div class="sm:grid grid-cols-12 mb-16">
                     <div class="col-span-4 ">
                         <h3 class="text-dark-gray  text-[28px] font-bold">Your future is here!</h3>
                     </div>
@@ -124,13 +150,13 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-12 gap-3">
-                <div class="col-span-12 px-4 font-semibold text-3xl mb-[.8em]">
+            <div class="sm:grid grid-cols-12 border-t-2 gap-3">
+                <div class="col-span-12 sm:px-4 font-semibold sm:text-3xl text-[26px] mb-3">
                     <h3>Which course are you looking for?</h3>
                 </div>
 
                 <div class="col-span-8">
-                    <form class="px-4 flex flex-col gap-4">
+                    <form class="sm:px-4 flex flex-col gap-4">
                         <div>
                             <select name="course" id="course"
                                 class="w-full  bg-transparent border-2 border-dark-gray px-4 py-3">
@@ -147,11 +173,11 @@
                         </div>
                         <div class="">
                             <button
-                                class="bg-light-brown hover: hover:border-light-brown hover:bg-transparent hover:text-light-brown text-2xl font-bold w-full text-white px-4 py-3">Search</button>
+                                class="bg-light-brown hover:border-2 hover:border-light-brown hover:bg-transparent hover:text-light-brown text-2xl font-bold w-full text-white px-4 py-3">Search</button>
                         </div>
                     </form>
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-4 mt-16 sm:mt-0">
                     <div>
                         <h4 class="text-2xl mb-2">Courses from A to Z:</h4>
                         <p>
@@ -170,20 +196,34 @@
         </section>
 
         <!-- third section -->
-        <section class="py-24 px-28 bg-light-white">
-            <div class="grid grid-cols-12">
-                <div class="flex justify-between col-span-12 items-center">
-                    <h2>News</h2>
-                    <p class="flex items-center">
-                        <span>All news</span>
-                        <span>
-                            <img src="/images/icon.png" alt="arrow-down" class="w-10 h-10" />
+        <section class="py-24 sm:px-28  bg-light-white">
+            <div class="sm:grid grid-cols-12">
+                <div class="sm:flex px-4  sm:px-0 sm:justify-between sm:col-span-12 items-center">
+                    <h2 class="text-5xl pb-4 sm:pb-0 font-light text-light-brown ">News</h2>
+                    <p class="font-semibold sm:mt-8 flex items-center">
+                        <span class="text-light-brown">Learn More</span>
+                        <span class="mt-1">
+                            <svg class="fill-light-brown h-8 pl-2 pr-1" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: none;
+                                        }
+                                    </style>
+                                </defs>
+                                <line class="cls-1" x2="512"></line>
+                                <rect class="cls-1" width="512" height="512"></rect>
+                                <path
+                                    d="M256,114.62A141.38,141.38,0,1,0,397.38,256,141.38,141.38,0,0,0,256,114.62ZM243.94,334.75l-22.63-22.63L277.44,256l-56.13-56.13,22.63-22.62L322.69,256Z">
+                                </path>
+                            </svg>
                         </span>
                     </p>
                 </div>
 
-                <div class="col-span-12 p-4  grid grid-cols-3 gap-8">
-                    <div class=" bg-white">
+                <div class="col-span-12 border-2  overflow-scroll no-scrollbar  grid grid-flow-col   gap-8">
+                    <div class="sm:mx-5  w-96 flex flex-col justify-between bg-white">
                         <div class="pb-5 p-4">
                             <p class="text-light-brown">Desporto</p>
                         </div>
@@ -194,56 +234,110 @@
 
                         <p class="my-4 p-4">14 May 2024</p>
                         <img src="https://noticias.up.pt/wp-content/uploads/2024/05/aerea-frente-edificios.jpg"
-                            alt="Desporto" />
+                            alt="Desporto" class="object-cover" />
                     </div>
 
 
-                    <div class=" bg-white">
+                    <div class=" mx-5 w-96  flex flex-col justify-between  bg-white">
                         <div class="pb-5 p-4">
-                            <p class="text-light-brown">Desporto</p>
+                            <p class="text-light-brown">
+                                Cultura</p>
                         </div>
 
                         <h3 class="mb-16 p-4 text-xl font-semibold">
-                            <a class="" href="#">U.Porto vai organizar Europeu Universitário de Futebol em 2027</a>
+                            <a class="" href="#">MHNC-UP abre “fora de horas” para celebrar os Museus e a Ciência</a>
                         </h3>
 
-                        <p class="my-4 p-4">14 May 2024</p>
-                        <img src="https://noticias.up.pt/wp-content/uploads/2024/05/aerea-frente-edificios.jpg"
+                        <p class="my-4 p-4">11 May 2024</p>
+                        <img src="https://noticias.up.pt/wp-content/uploads/2024/05/peddy-paper-mentoria-mhnc-up_02.jpg"
                             alt="Desporto" />
                     </div>
-                    <div class=" bg-white">
+                    <div class=" w-96 mx-5 flex  flex-col justify-between bg-white">
                         <div class="pb-5 p-4">
-                            <p class="text-light-brown">Desporto</p>
+                            <p class="text-light-brown"> Campus e Comunidade
+                                Ciência e Inovação
+                                Fotogaleria
+                                Multimédia</p>
+                        </div>
+
+                        <h3 class="mb-16 mx-5 p-4 text-xl font-semibold">
+                            <a class="" href="#">
+                                IJUP 2024: Novos talentos da Ciência revelam-se na U.Porto
+                            </a>
+                        </h3>
+
+                        <p class="my-4 p-4">09 May 2024</p>
+                        <img src="https://noticias.up.pt/wp-content/uploads/2024/05/ijup-2024_01.jpg" alt="Desporto" />
+                    </div>
+                    <div class=" w-96 mx-5  flex flex-col justify-between  bg-white">
+                        <div class="pb-5 p-4">
+                            <p class="text-light-brown"> Campus e Comunidade
+                                Ciência e Inovação
+                                Fotogaleria
+                                Multimédia</p>
                         </div>
 
                         <h3 class="mb-16 p-4 text-xl font-semibold">
-                            <a class="" href="#">U.Porto vai organizar Europeu Universitário de Futebol em 2027</a>
+                            <a class="" href="#">
+                                IJUP 2024: Novos talentos da Ciência revelam-se na U.Porto
+                            </a>
                         </h3>
 
-                        <p class="my-4 p-4">14 May 2024</p>
-                        <img src="https://noticias.up.pt/wp-content/uploads/2024/05/aerea-frente-edificios.jpg"
-                            alt="Desporto" />
+                        <p class="my-4 p-4">09 May 2024</p>
+                        <img src="https://noticias.up.pt/wp-content/uploads/2024/05/ijup-2024_01.jpg" alt="Desporto" />
                     </div>
                 </div>
             </div>
 
-            <div>
-                <button>
-                    <img src="/images/ChevronLeftLittle.svg" alt="arrow-down" class="w-10 h-10" />
-
+            <div class="mt-10 p-4">
+                <button class="bg-light-brown p-2">
+                    <div class="mb-1">
+                        <svg class="fill-white" height="1.4em" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: none;
+                                    }
+                                </style>
+                            </defs>
+                            <line class="cls-1" x2="512"></line>
+                            <polygon
+                                points="337.97 137.24 315.34 114.62 196.62 233.35 196.62 233.35 173.99 255.98 196.62 278.61 315.38 397.38 338.01 374.76 219.24 255.98 337.97 137.24">
+                            </polygon>
+                            <rect class="cls-1" width="512" height="512"></rect>
+                        </svg>
+                    </div>
                 </button>
-                <button>
-                    <img src="/images/ChevronRightLittle.svg" alt="arrow-down" class="w-10 h-10" />
+                <button class="bg-light-brown p-2">
+                    <div class="mb-1">
+                        <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1.4em">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: none;
+                                    }
+                                </style>
+                            </defs>
+                            <line class="cls-1" x2="512"></line>
+                            <polygon
+                                points="174.03 374.76 196.66 397.38 315.38 278.65 315.38 278.65 338.01 256.02 315.38 233.39 196.62 114.62 173.99 137.24 292.76 256.02 174.03 374.76">
+                            </polygon>
+                            <rect class="cls-1" width="512" height="512"></rect>
+                        </svg>
+                    </div>
                 </button>
             </div>
         </section>
 
 
         <!-- forth section -->
-        <section class="py-24 px-28 border-b-4">
-            <div class="grid grid-cols-12 gap-5">
+        <section class="py-24 px-4 sm:px-28 ">
+            <div class="sm:grid grid-cols-12 gap-5">
                 <div class="col-span-4 bg-hero-pattern-2 bg-no-repeat bg-contain bg-right-bottom ">
-                    <h2 class="text-light-brown text-5xl font-light">We are a University of Excellence!</h2>
+                    <h2 class="text-light-brown mb-4 sm:mb-0 text-[38px] sm:text-5xl border-2 font-light">We are a
+                        University of
+                        Excellence!</h2>
 
                 </div>
                 <div class="col-span-8 text-xl font-light">
@@ -291,8 +385,8 @@
 
         <!-- fifth section -->
 
-        <section class="py-24 px-28">
-            <div class="grid grid-cols-12 gap-6">
+        <section class="py-24 px-4 sm:px-28">
+            <div class="sm:grid grid-cols-12 gap-6">
                 <div class="col-span-12 ">
                     <h2 class=" mb-4 text-light-brown font-light text-5xl">Research</h2>
                 </div>
@@ -319,8 +413,8 @@
         </section>
 
         <!-- sixth section -->
-        <section class="my-24 py-16 text-white bg-light-brown px-28">
-            <div class="grid grid-cols-12">
+        <section class=" py-16  text-white bg-light-brown sm:px-28">
+            <div class="sm:grid flex flex-col grid-cols-12">
                 <div class="col-span-12 flex justify-end ">
                     <p class="flex text-right items-center">
                         <span>Learn More</span>
@@ -353,13 +447,13 @@
                 </div>
 
                 <div class="col-span-12 flex flex-col items-center">
-                    <h2 class="font-bold text-4xl uppercase">U.Porto in Figures</h2>
+                    <h2 class="font-bold sm:text-4xl text-5xl text-center uppercase">U.Porto in Figures</h2>
                     <span class="font-light text-3xl">2022/2023</span>
                 </div>
 
                 <div class="col-span-12 w-full h-[0.5px] my-8 bg-white"></div>
 
-                <div class="grid grid-cols-12 place-items-center col-span-12">
+                <div class="sm:grid flex flex-col gap-10 sm:gap-0 grid-cols-12 place-items-center col-span-12">
                     <div class="col-span-4">
                         <span class="block text-center font-bold text-4xl">
                             +300
@@ -384,12 +478,12 @@
         </section>
 
         <!-- seventh section -->
-        <section class="px-28 bg-light-white py-24">
+        <section class="sm:px-28 px-4 bg-light-white py-24">
             <div class="grid grid-cols-12">
                 <div class="col-span-12">
                     <h2 class="mb-10.4 text-5xl text-light-brown font-light">Frequently asked questions</h2>
                 </div>
-                <div class="col-span-12">
+                <div class=" hidden sm:col-span-12">
                     <ul class="flex font-semibold  border-b-2 mb-10 text-lg text-gray-200 ">
                         <li class="  text-dark-gray mb-4">
                             <a class="border-b-1 border-b-dark-gray  py-4 mr-8" href="">International Students</a>
@@ -411,7 +505,7 @@
                 </div>
 
                 <div class="col-span-12 grid grid-cols-12">
-                    <div class="col-span-6 gap-12">
+                    <div class="sm:col-span-6 col-span-12 gap-12">
                         <h2 class="text-dark-gray text-3.2 font-semibold mb-3 leading-loose">International Students</h2>
                         <p class="text-xl font-light leading-normal pr-12">Welcome! In this area you will find the
                             answers
@@ -483,7 +577,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-span-6">
+                    <div class="row-start-1 sm:row-auto col-span-12 sm:col-span-6">
                         <img src="/images/gate-estudantes-internacionais.format-jpeg.jpg" alt="
                         International Students" />
                     </div>
@@ -492,14 +586,14 @@
         </section>
     </main>
     <footer
-        class="bg-hero-pattern-3 px-28 font-light text-sm text-light-white bg-dark-gray pt-20 pb-4 bg-no-repeat bg-50 bg-custom">
-        <div class="grid grid-cols-12">
-            <div class="col-span-12 grid grid-cols-12">
+        class="bg-hero-pattern-3 sm:px-28 px-4 font-light text-sm text-light-white bg-dark-gray pt-20 pb-4 bg-no-repeat bg-50 bg-custom">
+        <div class="sm:grid grid-cols-12">
+            <div class="col-span-12 sm:grid grid-cols-12">
                 <div class="col-span-2">
-                    <h2 class="text-light-brown text-base font-semibold">Media</h2>
+                    <h2 class="text-light-brown mb-4 sm:mb-0 text-base font-semibold">Media</h2>
                 </div>
                 <div class="col-span-10 mb-16">
-                    <ul class="grid grid-cols-4 gap-4">
+                    <ul class="sm:grid grid-cols-4 gap-4">
                         <li class="pb-4 ">
                             <a href="#">U.Porto News</a>
                         </li>
@@ -519,11 +613,11 @@
                 </div>
 
                 <div class="col-span-2">
-                    <h2 class="text-light-brown text-base font-semibold">U.Porto Portals</h2>
+                    <h2 class=" mb-4 sm:mb-0 text-light-brown text-base font-semibold">U.Porto Portals</h2>
                 </div>
 
                 <div class="col-span-10">
-                    <ul class="grid grid-cols-4 gap-4">
+                    <ul class="sm:grid grid-cols-4 gap-4">
                         <li class="pb-4 ">
                             <a href="#">CDUP - U.Porto Sports Centre</a>
                         </li>
@@ -570,8 +664,8 @@
 
             <div class="my-12  col-span-12 border-t-1 border-b-light-gray"></div>
 
-            <div class=" grid grid-cols-12 col-span-12">
-                <div class="col-span-8 flex gap-8">
+            <div class=" sm:grid grid-cols-12 col-span-12">
+                <div class="col-span-8 my-4 sm:my-0 flex gap-8">
                     <div class="flex gap-8 text-xl">
                         <a href="#" class="text-white">
                             <i class="fa-solid fa-newspaper"></i>
@@ -608,7 +702,7 @@
             </div>
 
             <div class="col-span-12">
-                <ul class="flex text-base">
+                <ul class="sm:flex text-base">
                     <li class="mb-4 mr-5 font-bold">© University of Porto 2024</li>
                     <li class="mb-4 mr-5">
                         <a href="">Personal Data Protection</a>
